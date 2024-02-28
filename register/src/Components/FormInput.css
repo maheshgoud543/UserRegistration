@@ -3,13 +3,26 @@
     flex-direction: column;
     width: 280px;
 }
+
 input {
     padding: 15px;
     margin: 10px 0px;
     border-radius: 50px;
     border: 1px solid gray;
 }
-label{
+
+label {
     font-size: 18px;
     color: black;
+}
+
+span {
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+input:invalid~span {
+    display: block;
 }
